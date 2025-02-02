@@ -19,22 +19,22 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => console.error('Erro ao carregar vagas:', error));
 // Exemplo de adição de uma vaga
-fetch('http://localhost:5000/api/jobs', {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-        companyName: 'Empresa XYZ',
-        benefits: 'Vale alimentação, plano de saúde',
-        requirements: 'Experiência com Node.js, React',
-        salary: 'R$ 5000,00',
-        postingDate: '2023-10-01'
-    }),
-})
-.then(response => response.json())
-.then(data => console.log(data))
-.catch(error => console.error('Erro ao adicionar vaga:', error));
+// fetch('http://localhost:5000/api/jobs', {
+//     method: 'POST',
+//     headers: {
+//         'Content-Type': 'application/json',
+//     },
+//     body: JSON.stringify({
+//         companyName: 'Empresa XYZ',
+//         benefits: 'Vale alimentação, plano de saúde',
+//         requirements: 'Experiência com Node.js, React',
+//         salary: 'R$ 5000,00',
+//         postingDate: '2023-10-01'
+//     }),
+// })
+// .then(response => response.json())
+// .then(data => console.log(data))
+// .catch(error => console.error('Erro ao adicionar vaga:', error));
 
 
     });
